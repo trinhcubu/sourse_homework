@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Webside loging email</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Join our email list</h1>
+	<p>To join our email list, enter your name and email address below.</p>
+	<div class="form-html">
+		<form action="listEmail" method="post">
+            <div class="header">
+                <img class="logo"
+                    src="https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/hdxfv6tstrashvbanvep"
+                    alt="logo" />          
+            </div>
+            <h1>Survey</h1>
+            <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+
+            <h2>Your information:</h2>
+            <label class="pad_top">First Name:</label>
+            <input type="text" name="firstName" required><br>
+            <label class="pad_top">Last Name:</label>
+            <input type="text" name="lastName" required><br>
+            <label class="pad_top">Email:</label>
+            <input type="email" name="email" required><br>
+            <label class="pad_top">Birthday:</label>
+            <input type="date" name="date" required><br>
+
+            <h2>How did you hear about us?</h2>
+            <p><input type=radio name="heardFrom" value="Search Engine">Search engine
+                <input type=radio name="heardFrom" value="Friend">Word of mouth
+                <input type=radio name="heardFrom" value="Other">Other
+            </p>
+
+            <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+            <p><input type="radio" name="wantsUpdates">YES, I'd like that.</p>
+            <p>
+                <input type="radio" name="wantsUpdates">No, I don't.
+            </p>
+
+            <p>Please contact me by:
+                <select name="contactVia">
+                    <option value="Both" selected>Email or postal mail</option>
+                    <option value="Email">Email only</option>
+                    <option value="Postal Mail">Postal mail only</option>
+                </select>
+            </p>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+		
+	</div>
+	<a href="" style="display:grid;width: 200px;height:50px;align-items:center;justify-content:center;text-decoration: none;color:black;background:rgb(105, 197, 105);margin-top: 100px; border:3px solid black;;font-size:20px;border-radius:4px;">Back Home</a>
+</body>
+</html>
